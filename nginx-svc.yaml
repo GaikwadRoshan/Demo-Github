@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-nginx-svc
+  name: my-webapp-svc
   labels:
-    app: nginx
+    app: webap2
 spec:
   type: LoadBalancer
   ports:
   - port: 80
     targetPort: 80
   selector:
-    app: nginx
+    app: webapp2
